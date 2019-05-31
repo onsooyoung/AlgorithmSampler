@@ -15,7 +15,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         System.out.println("Hello Bubble Sort!!");
         ArrUtil.printArray(sortedBeforeArray);
         ArrUtil.printArray(new BubbleSort().sort(sortedBeforeArray));
@@ -23,16 +22,12 @@ public class Main {
         resetArray();
         System.out.println("Hello Selection Sort!!");
         ArrUtil.printArray(sortedBeforeArray);
-        Sorter sorter = new SelectionSort();
-        ArrUtil.printArray(sorter.sort(ArrUtil.makeArrayRandomNumber(10)));
-
+        ArrUtil.printArray(new SelectionSort().sort(sortedBeforeArray));
 
         resetArray();
         System.out.println("Hello Insertion Sort!!");
         ArrUtil.printArray(sortedBeforeArray);
-        sorter = new InsertionSort();
-        ArrUtil.printArray(sorter.sort(ArrUtil.makeArrayRandomNumber(10)));
-
+        ArrUtil.printArray(new InsertionSort().sort(sortedBeforeArray));
 
     }
 }
