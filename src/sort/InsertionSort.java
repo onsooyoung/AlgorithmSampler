@@ -19,11 +19,11 @@ public class InsertionSort implements Sorter {
             int key = sample[round];
             int j = round - 1;
 
-            while ( j > 0 && sample[j] > key){
+            while ( j >= 0 && sample[j] > key){//어디에 삽일할까?
                 sample[j+1] = sample[j];
-                j = j -1;
+                j--;
             }
-            sample[j+1] = key;
+            sample[j+1] = key;//이때 삽입한다
         }
 
         return sample;
